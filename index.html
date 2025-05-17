@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Börübay</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      ul {
+        display: flex;
+        flex-wrap: wrap; /* Ekran daralınca alta geçsin */
+        background-color: #3f3f3f;
+        margin: 0;
+        padding: 0px;
+        height: auto;
+        border-radius: 5px;
+        border-color: #3f3f3f;
+       
+      }
+
+      ul li {
+        list-style: none;
+        padding: 0 20px;
+        line-height: 50px;
+      }
+
+      ul li a {
+        color: white;
+        text-decoration: none;
+        white-space: nowrap; /* Taşmasın, kelime bölünmesin */
+      }
+
+      i {
+        padding-right: 6px;
+      }
+
+      ul li:hover {
+        background-color: rgb(60, 71, 162);
+        transition: 0.5s;
+        border-radius: 20px;
+      }
+
+      body {
+        background-image: url(b.webp);
+        background-size: cover; /* Fotoğrafı ekranı kaplayacak şekilde büyütür */
+        background-position: center; /* Ortalayıp hizalar */
+        background-repeat: no-repeat; /* Tekrar etmesini engeller */
+        background-attachment: fixed; /* Scroll yapınca foto yerinde sabit kalır */
+      }
+
+      .div1 {
+        background-color: rgba(63, 62, 62, 0.6);
+        height: 220px;
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(
+          -50%,
+          -50%
+        ); /* Div'i %100 doğru bir şekilde ortalar */
+        border-radius: 10px;
+      }
+
+      .pp {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        padding-top: 40px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+      }
+
+      .div1:hover {
+        width: 50%;
+        height: 210px;
+        transition: 0.7s;
+        background-color: rgba(63, 62, 62, 0.7);
+      }
+
+      .po {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(199, 199, 216);
+        font-size: 13px;
+        font-style: italic;
+      }
+
+      .li1{
+      display: block;
+      position: absolute;
+      }
+
+      
+
+    </style>
+  </head>
+  <!--background-color: rgba(200, 194, 180, 0.989-->
+  <body>
+    <ul>
+      <li>
+        <a href="Hakkinda.html"><i class="fa-solid fa-circle-info"></i>Hakkında</a>
+      </li>
+      <li>
+        <a href="Gokborununizinde.html"><i class="fa-solid fa-book"></i>Gökbörünün İzinde</a>
+      </li>
+      <li>
+        <a href="Rabbulhakikat.html"><i class="fa-solid fa-book"></i>Rabbü'l Hakikat</a>
+      </li>
+      <li>
+        <a href="Ayteg.html"><i class="fa-solid fa-book"></i>Ayteg</a>
+      </li>
+      <li>
+        <a href="Luciusaretasarayis.html"><i class="fa-solid fa-book"></i>Lucius Aretas: Arayış</a>
+      </li>
+      <li>
+        <a href="SSS.html"><i class="fa-solid fa-magnifying-glass"></i>SSS</a>
+      </li>
+      <li>
+        <a href="İletisim.html"
+          ><i class="fa-solid fa-question"></i>İletişim</a
+        >
+      </li>
+    </ul>
+
+    <div class="div1">
+      <p class="pp">
+        "Yaşamak için sebebi olmayanlar ölmek için kutsal bir neden
+        bulmalıdırlar."
+      </p>
+      <p class="po">Börübay~Gökbörünün İzinde</p>
+    </div>
+
+    <div class="div2"></div>
+  </body>
+</html>

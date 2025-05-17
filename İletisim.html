@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Börübay-İletişim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+   ul {
+        display: flex;
+        flex-wrap: wrap; /* Ekran daralınca alta geçsin */
+        background-color: #3f3f3f;
+        margin: 0;
+        padding: 0px;
+        height: auto;
+        border-radius: 5px;
+        border: 2px solid rgb(22, 9, 2);
+        border-top: none;
+      }
+
+      ul li {
+        list-style: none;
+        padding: 0 20px;
+        line-height: 50px;
+      }
+
+      ul li a {
+        color: white;
+        text-decoration: none;
+        white-space: nowrap; /* Taşmasın, kelime bölünmesin */
+      }
+
+      i {
+        padding-right: 6px;
+      }
+
+      ul li:hover {
+        background-color: rgb(60, 71, 162);
+        transition: 0.5s;
+        border-radius: 20px;
+      }
+
+      body {
+        background-image: url("thorfinnsinirli.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      a {
+        text-decoration: none;
+      }
+        
+    .yazi1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+
+      .kutu1 {
+        background-color: #3f3f3f;
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid rgb(22, 9, 2);
+        display: flex;
+        justify-content: center; /* yatay ortala */
+        align-items: center;
+      }
+
+
+    .kutu2 {
+      background-color: rgba(63, 62, 62, 0.8);
+      border: 2px solid rgb(22, 9, 2);
+      border-radius: 5px;
+      max-width: 800px;
+      margin: 40px;
+      padding: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      color: rgb(224, 192, 149);
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .form-group textarea {
+      height: 100px;
+    }
+
+    @media (min-width: 768px) {
+      .form-group {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .form-group label {
+        width: 120px;
+        margin-bottom: 0;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        flex: 1;
+      }
+    }
+
+    .ben{
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    input, textarea{
+       background-color: rgba(176, 182, 194, 0.4);
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="kutu1">
+    <h1 class="yazi1">İletişim</h1>
+  </div>
+ <ul>
+      <li>
+        <a href="index.html"
+          ><i class="fa-solid fa-house-chimney"></i>Ana Sayfa</a
+        >
+      </li>
+      <li>
+        <a href="Hakkinda.html"><i class="fa-solid fa-circle-info"></i>Hakkında</a>
+      </li>
+      <li>
+        <a href="Gokborununizinde.html"><i class="fa-solid fa-book"></i>Gökbörünün İzinde</a>
+      </li>
+      <li>
+        <a href="Rabbulhakikat.html"><i class="fa-solid fa-book"></i>Rabbü'l Hakikat</a>
+      </li>
+      <li>
+        <a href="Ayteg.html"><i class="fa-solid fa-book"></i>Ayteg</a>
+      </li>
+      <li>
+        <a href="Luciusaretasarayis.html"><i class="fa-solid fa-book"></i>Lucius Aretas: Arayış</a>
+      </li>
+      <li>
+        <a href="SSS.html"><i class="fa-solid fa-magnifying-glass"></i>SSS</a>
+      </li>
+      
+    </ul>
+
+  <center><div class="kutu2">
+    <form>
+      <div class="form-group">
+        <label for="ad" style="color: white;">Ad:</label>
+        <input type="text" id="ad" name="ad" />
+      </div>
+      <div class="form-group">
+        <label for="soyad" style="color: white;">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" />
+      </div>
+      <div class="form-group">
+        <label for="email" style="color: white;">E-mail:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="form-group" style="color: white;">
+        <label for="mesaj" style="color: white;">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" placeholder="Mesajınız"></textarea>
+      </div>
+      <div>
+        <center><input class="ben" type="reset" name="" id="">
+        <input class="ben" type="submit" name="gonder" id=""></center>
+      </div></center>
+
+    </form>
+  </div>
+
+</body>
+</html>
